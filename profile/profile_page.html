@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | New News</title>
+    <link rel="icon" href="C:\Users\Батыр\Desktop\Web Tech Aitu\main page\icon\Animated Logo 500x500 px.png">
+    <link rel="stylesheet" href="profile_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="profile_script.js" defer></script>
+    <script src="language_js.js" defer></script>
+    <script src="main_info.js" defer></script>
+    <script src="Skills.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div id="wrapper_header" class="container-fluid">
+                <span class="profile_main_text">Profile</span>
+                <a style="color: black" href="file:///C:/Users/%D0%91%D0%B0%D1%82%D1%8B%D1%80/Desktop/Web%20Tech%20Aitu/profile/profile_page.html">
+                    <span class="new_news_main_text">New News</span>
+                </a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" aria-label="Search" id="seacrh_id">
+                    <button class="btn btn-outline-success" type="button" id="submit_btn"></button>
+                  </form>
+        </div>
+        <div class="wrapper_profile_icon">
+            <span class="circle_with_firstLetter"></span>
+            <span class="full_name_profile"></span>
+            <a  class="edit_profile_btn">
+                <button class="button_edit"></button>
+            </a>
+            <li class="nav-item dropdown" id="dropdown_btn">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="dropdown_text">...</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" id="add_additional_info"></a></li>
+                  <li><hr class="dropdown-divider"></li>
+
+                  <li><a class="dropdown-item" href="#" id="rename_name"></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#" id="rename_surname"></a></li>
+                </ul>
+              </li>
+           
+        </div>
+        <div class="rename_window">
+            <a href style="color: black">
+                <span class="close_btn">X</span>
+             
+            </a>
+            <div class="loader_div">
+                <div class="spinner-border" id="loader"></div>
+                <div class="loading_texts"></div>
+                <span class="load_text"></span>
+                <span class="internet_connection"></span>
+               </div>
+            <div class="rename_name_div">
+                <input type="text" id="name_input" class="form-control" placeholder="">
+                <span class="count_letter"></span>
+                <button type="button" class="btn btn-success" id="save_btn_loader"></button>
+                <span class="failed_msg"></span>
+                
+            </div>
+          </div>
+
+          <!-- surname window -->
+          <div class="change_surname_window">
+            <a href style="color: black">
+              <span class="close_btn_surname">X</span>
+          </a>
+          <div class="loader_div_surname">
+            <div class="spinner-border" id="loader_surname"></div>
+            <div class="load_text_surname"></div>
+
+          </div>
+          <div class="rename_surname_div">
+            <input type="text" id="surname_input" class="form-control" placeholder="">
+            <span class="count_letter_surname"></span>
+            <button type="button" class="btn btn-success" id="save_btn_surname"></button>
+            <span class="fail_surname"></span>
+        </div>
+          </div>
+
+          <!-- additional information -->
+          <div class="additional_info_div">
+            <a href="#" style="color: #000">
+              <span class="close_btn_add_div">X</span>
+            </a>
+            <div class="loader"></div>
+            <div class="main_info">
+              <span class="circle_additional_window"></span>
+              <span class="additional_window_mainText">Add additional information</span>
+              <span class="nickname_text">Nickname: Weegoo</span>
+              <hr class="divide_line_nickname">
+              <div class="about_users">
+                <span class="circle_about"></span>
+                <span class="about_text">About User</span>
+                <input type="number" id="phone_number" class="form-control" placeholder="Phone number..." aria-label="Username" aria-describedby="basic-addon1" required>
+                <textarea class="form-control" id="bio_text" aria-label="With textarea" placeholder="Write about yourself, whatever comes to mind (Min 9 letters)...." required></textarea>
+                <div class="input-group mb-3" id="salary">
+                  <span class="input-group-text" id="basic-addon1">$</span>
+                  <input type="number" id="salary_input" class="form-control" placeholder="Expected salary..." aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              <hr class="divide_line_about">
+              <span class="circle_skills"></span>
+              <span class="skills_text">Skills</span>
+              <div class="input-group mb-3" id="web_design_skills">
+                <span class="input-group-text" id="max_points_web">/10</span>
+                <input type="number" id="web_input" class="form-control" placeholder="Web Design Skills" aria-label="Username" aria-describedby="basic-addon1" max="10" min="0">
+              </div>
+              <div class="input-group mb-3" id="website_markup_skills">
+                <span class="input-group-text" id="max_points_mark">/10</span>
+                <input type="number" id="markup_input" class="form-control" placeholder="Website Markup Skills" aria-label="Username" aria-describedby="basic-addon1" max="10" min="0">
+              </div>
+
+              <div class="input-group mb-3" id="one_page_skills">
+                <span class="input-group-text" id="max_points_one">/10</span>
+                <input type="number" id="page_input" class="form-control" placeholder="One Page Skills" aria-label="Username" aria-describedby="basic-addon1" max="10" min="0">
+              </div>
+
+              <div class="input-group mb-3" id="mobile_skills">
+                <span class="input-group-text" id="max_points_mobile">/10</span>
+                <input type="number" id="mobile_input" class="form-control" placeholder="Mobile Template Skills" aria-label="Username" aria-describedby="basic-addon1" max="10" min="0">
+              </div>
+
+              <!-- backend -->
+              <div class="input-group mb-3" id="backend_skills">
+                <span class="input-group-text" id="max_points_backend">/10</span>
+                <input type="number" id="backend_input" class="form-control" placeholder="Backend API Skills" aria-label="Username" aria-describedby="basic-addon1" max="10" min="0">
+              </div>
+              </div>
+            </div>
+
+            <button class="btn btn-success" id="save_btn_additional">Save</button>
+          </div>
+
+          <div class="alert alert-success" role="alert" id="loading_is_success">
+            <span class="alert_text"></span>
+
+          </div>
+          <div class="alert alert-danger" id="warning_danger">
+            <span class="danger_text"></span>
+          </div>
+         <div class="buttons_container">
+            <div class="container text-center">
+                <button type="button" class="btn btn-light" id="work_btn"></button>
+                <button type="button" class="btn btn-light" id="work_boost"></button>
+                <button type="button" class="btn btn-light" id="collections_btn"></button>
+                <button type="button" class="btn btn-light" id="about_btn"></button>
+              </div>
+              <hr class="divide_line_btn">
+
+              <!-- сontainer_about -->
+             <div class="container_about">
+              <span class="password_info"></span>
+              <span class="dob_info"></span>
+              <span class="additional_info">Add</span>
+              <div id="registrantion_info_about_btn"  class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid" >
+                  <img src="C:\Users\Батыр\Desktop\Web Tech Aitu\profile\icon\free-icon-user-1077063.png" alt="" class="member_since">
+                  <span class="since_text"></span>
+
+                  <img src="C:\Users\Батыр\Desktop\Web Tech Aitu\profile\icon\free-icon-location-pin-106121.png" alt="" class="address_img">
+                  <span id="address"></span>
+                </div>
+
+                
+                
+              </div>
+              <div id="password_div" class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <img src="C:\Users\Батыр\Desktop\Web Tech Aitu\profile\icon\free-icon-lock-5953216.png" alt="" class="password_icon">
+                  <span class="password_text"></span>
+                  <img src="C:\Users\Батыр\Desktop\Web Tech Aitu\profile\icon\free-icon-scan-5881449.png" alt="" class="barcode_img">
+                  <span class="barcode_text"></span>
+                </div>
+               </div>
+
+               <div id="status_div" class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <img src="C:\Users\Батыр\Desktop\Web Tech Aitu\profile\icon\free-icon-time-and-date-26-8370208.png" alt="" class="date_of_birthText">
+                  <span class="dob_text"></span>
+                  <img src="C:\Users\Батыр\Desktop\Web Tech Aitu\profile\icon\free-icon-status-8917343.png" alt="" class="status_img">
+                  <span class="status_text"></span>
+                </div>
+               </div>
+             </div>
+             
+             <!-- carousel -->
+             <div class="work_container">
+              <span class="danger_info"></span>
+              <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                 <div class="text_c">
+                  <div class="carousel-item active" id="first_slide">
+                    
+                     <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                   </div>
+                   <div class="carousel-item" id="second_slide">
+                     <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                   </div>
+                   <div class="carousel-item" id="third_item">
+                     
+                     <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                   </div>
+                   <div class="carousel-item" id="fourth_slide">
+                  
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                  </div>
+                 </div>
+                </div>
+                <button id="prev_btn"  type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 
+                  <span class="visually-hidden"></span>
+                </button>
+                <button id="next_btn" class="" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <!-- <span class="visually-hidden">Next</span> -->
+                </button>
+              </div>
+             </div>
+         </div> 
+         
+         <div class="toast show" id="alert_div">
+          <div class="toast-header">
+            <strong class="me-auto">New News</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+          </div>
+          <div class="toast-body">
+            <p id="text_node"></p>
+          </div>
+        </div>
+        <nav aria-label="breadcrumb" id="list_of_btn">
+          <ol class="breadcrumb" id="o_lists">
+            <li class="breadcrumb-item" ><a href="file:///C:/Users/%D0%91%D0%B0%D1%82%D1%8B%D1%80/Desktop/Web%20Tech%20Aitu/main%20page/first_page.html" id="home_btn"></a></li>
+            <li class="breadcrumb-item"><a href="file:///C:/Users/%D0%91%D0%B0%D1%82%D1%8B%D1%80/Desktop/Web%20Tech%20Aitu/setting/setting.html" id="setting_btn"></a></li>
+            <li class="breadcrumb-item"><a href="file:///C:/Users/%D0%91%D0%B0%D1%82%D1%8B%D1%80/Desktop/Web%20Tech%20Aitu/about_us/about_page.html" id="about_us"></a></li>
+
+            <li class="breadcrumb-item active" aria-current="page" id="profile_btn">Profile</li>
+          </ol>
+        </nav>
+
+       <div class="coorporation_div">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col" >
+              <span class="corp_new_news_text">New News</span>
+            </div>
+            <div class="col">
+              <i style="font-size:24px" class="fa" id="amazon_icon">&#xf270;</i>
+            </div>
+            <div class="col">
+              <img src="C:\Users\Батыр\Desktop\Web Tech Aitu\main page\icon\microsoft (1).svg" alt="" class="mic_icon">
+            </div>
+            <div class="col">
+              <img src="C:\Users\Батыр\Desktop\Web Tech Aitu\main page\icon\nike.png" alt="" class="nike_icon">
+            </div>
+            <div class="col">
+              <i style="font-size:24px" class="fa" id="facebook_icon">&#xf09a;</i>
+            </div>
+          </div>
+        </div>
+       </div>
+       <div class="progress_t">
+        <audio controls autoplay class="audio">
+          <source src="C:\Users\Батыр\Desktop\Web Tech Aitu\profile\music\Diamonds.mp3">
+        </audio>
+        <div class="pr_2"></div>
+       </div>
+
+       <!-- edit profile -->
+       <div class="edit_profile_div">
+        <a href="#">
+          <span class="close_btn_edit_prof">x</span>
+        </a>
+        <a href="#">
+          <button class="btn btn-success" id="submit_data_btn"></button>
+        </a>
+        <img src="" alt="" class="avatar_img" title="ava">
+
+        <div class="info_about_user">
+          <span class="salary_text"></span>
+          <span class="web_skills"></span>
+          <span class="web_range">
+            <span class="current_range"></span>
+          </span>
+
+          <div class="website_info">
+            
+            <span class="website_skills"></span>
+            <span class="website_range">
+              <span class="current_website_skills"></span>
+            </span>
+          </div>
+
+          <div class="one_skills_div">
+            <span class="one_skills"></span>
+            <span class="one_skills_range">
+              <span class="one_skills_current"></span>
+            </span>
+          </div>
+
+          <div class="template_info_div">
+            <span class="template_skills"></span>
+            <span class="template_range">
+              <span class="current_range_template"></span>
+            </span>
+          </div>
+
+          <div class="backend_api_div">
+            <span class="api_skills"></span>
+            <span class="api_range">
+              <span class="api_current_range"></span>
+            </span>
+          </div>
+        </div>
+       </div>
+       
+       <!-- <div class="help_div">
+        <div class="first_step">
+          <span class="circle_first"></span>
+          <span class="move_circle_first"></span>
+        </div>
+       </div> -->
+</body>
+</html>
+
+
+
+

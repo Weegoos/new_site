@@ -1,0 +1,10 @@
+.videos{
+    position: absolute;
+    top: 15%;
+    /* display: flex; */
+    /* justify-content: center; */
+    }
+    
+    iframe{
+      padding: 1rem;
+    }

@@ -1,0 +1,259 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* variable */
+:root{
+    --main-var: calc(1vh + 1vw);
+}
+
+
+.password{
+    position: absolute;
+    top: calc(var(--main-var) * 8);
+    left: calc(var(--main-var) * 23);
+    width: calc(var(--main-var) * 15);
+    height: calc(var(--main-var) * 1.5);
+    font-size: calc(var(--main-var) * 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    border: solid #000 1px;
+    border-radius: 8px;
+    padding-left: 5px;
+}
+
+.password_fail{
+    position: absolute;
+    top: calc(var(--main-var) * 8.2);
+    left: calc(var(--main-var) * 39.3);
+    width: calc(var(--main-var) * 15);
+    height: calc(var(--main-var) * 1.5);
+    font-size: calc(var(--main-var) * 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+.password_correct{
+    position: absolute;
+    top: calc(var(--main-var) * 8.1);
+    left: calc(var(--main-var) * 39);
+    width: calc(var(--main-var) * 1.2);
+    display: none;
+
+
+    animation: icon linear 0.5s alternate forwards 1;
+}
+
+@keyframes icon {
+    0%{
+        top: calc(var(--main-var) * 7.3);
+    left: calc(var(--main-var) * 39);
+    opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        top: calc(var(--main-var) * 8.1);
+    left: calc(var(--main-var) * 39);
+    opacity: 1;
+    }
+}
+
+.verify_password{
+    position: absolute;
+    top: calc(var(--main-var) * 10.8);
+    left: calc(var(--main-var) * 23);
+    width: calc(var(--main-var) * 15);
+    height: calc(var(--main-var) * 1.5);
+    font-size: calc(var(--main-var) * 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    border: solid #000 1px;
+    border-radius: 8px;
+    padding-left: 5px;
+}
+
+.verify_correct{
+    position: absolute;
+    top: calc(var(--main-var) * 10.95);
+    left: calc(var(--main-var) * 39);
+    width: calc(var(--main-var) * 1.2);
+    display: none;
+
+
+    animation: icon_surname linear 0.5s alternate forwards 1;
+}
+
+
+@keyframes icon_surname {
+    0%{
+        top: calc(var(--main-var) * 10.1);
+    left: calc(var(--main-var) * 39);
+    opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        top: calc(var(--main-var) * 10.95);
+    left: calc(var(--main-var) * 39);
+    opacity: 1;
+    }
+    
+}
+
+.verify_fail{
+    position: absolute;
+    top: calc(var(--main-var) * 11);
+    left: calc(var(--main-var) * 39.3);
+    width: calc(var(--main-var) * 15);
+    height: calc(var(--main-var) * 1.5);
+    font-size: calc(var(--main-var) * 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+.barcode{
+    position: absolute;
+    top: calc(var(--main-var) * 13.5);
+    left: calc(var(--main-var) * 23);
+    width: calc(var(--main-var) * 15);
+    height: calc(var(--main-var) * 1.5);
+    font-size: calc(var(--main-var) * 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    border: solid #000 1px;
+    border-radius: 8px;
+    padding-left: 5px;
+}
+
+.barcode_fail{
+    position: absolute;
+    top: calc(var(--main-var) * 13.8);
+    left: calc(var(--main-var) * 39.3);
+    width: calc(var(--main-var) * 15);
+    height: calc(var(--main-var) * 1.5);
+    font-size: calc(var(--main-var) * 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: red;
+}
+
+.barcode_correct{
+    position: absolute;
+    top: calc(var(--main-var) * 13.5);
+    left: calc(var(--main-var) * 39);
+    width: calc(var(--main-var) * 1.2);
+    display: none;
+
+
+    animation: nickname linear 0.5s alternate forwards 1;
+}
+
+@keyframes nickname {
+    0%{
+        top: calc(var(--main-var) * 13);
+    left: calc(var(--main-var) * 39);
+    opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        top: calc(var(--main-var) * 13.5);
+    left: calc(var(--main-var) * 39);
+    opacity: 1;
+    }
+}
+
+#next{
+    /* position: absolute;
+    top: calc(var(--main-var) * 16.5);
+    left: calc(var(--main-var) * 33); */
+}
+
+.next_chinese{
+    position: absolute;
+    top: calc(var(--main-var) * 16.1);
+    left: calc(var(--main-var) * 35.5);
+    color: red;
+}
+
+.next_kazakh{
+    position: absolute;
+    top: calc(var(--main-var) * 16.1);
+    left: calc(var(--main-var) * 33);
+}
+
+.next_rus{
+        position: absolute;
+    top: calc(var(--main-var) * 16.1);
+    left: calc(var(--main-var) * 32.8);
+}
+
+.next_en{
+       position: absolute;
+    top: calc(var(--main-var) * 16.1);
+    left: calc(var(--main-var) * 34);
+}
+
+.first_step{
+    position: absolute;
+    top: calc(var(--main-var) * 5.8);
+    left: calc(var(--main-var) * 23);
+    width: calc(var(--main-var) * 4.4);
+    border: solid 4px;
+    border-radius: 8px;
+    border-color: green;
+}
+
+
+.second_step{
+    position: absolute;
+    top: calc(var(--main-var) * 5.8);
+    left: calc(var(--main-var) * 28.1);
+    width: calc(var(--main-var) * 4.4);
+    border: solid 4px;
+    border-radius: 8px;
+}
+
+.third_step{
+    position: absolute;
+    top: calc(var(--main-var) * 5.8);
+    left: calc(var(--main-var) * 33.2);
+    width: calc(var(--main-var) * 4.4);
+    border: solid 4px;
+    border-radius: 8px;
+}
+
+.text_first_line{
+    position: absolute;
+    top: calc(var(--main-var)* 5.2);
+    left: calc(var(--main-var) * 23);
+    font-size: calc(var(--main-var) * 0.85);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text_second_line{
+    position: absolute;
+    top: calc(var(--main-var)* 5.2);
+    left: calc(var(--main-var) * 28.2);
+    font-size: calc(var(--main-var) * 0.85);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.requirements{
+    position: absolute;
+    top: calc(var(--main-var) * 19);
+    left: calc(var(--main-var) * 14);
+}
+
+.color_green{
+    border-color: green;
+    transition: 0.5s ease;
+}

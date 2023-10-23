@@ -1,0 +1,472 @@
+*,
+*::after,
+*::before{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* var */
+:root{
+    --search: calc(1vh + 1vw);
+}
+
+.wrapper_search{
+    position: absolute;
+    top: calc(var(--search) * 1);
+    left: calc(var(--search) * 1);
+    border: solid 	#D3D3D3 3px;
+    width: calc(var(--search) * 12);
+    height: 94%;
+    transition: 0.5s ease;
+}
+
+.circle_1{
+    position: absolute;
+    top: calc(var(--search) * 1);
+    width: calc(var(--search) * 0.7);
+    height: calc(var(--search) * 0.7);
+    border: solid #FF5F1F 1px;
+    border-radius: 50%;
+    left: calc(var(--search) * 1);
+    background-color: 	#FF5F1F;
+}
+
+.circle_2{
+    position: absolute;
+    top: calc(var(--search) * 1);
+    width: calc(var(--search) * 0.7);
+    height: calc(var(--search) * 0.7);
+    border: solid #000 1px;
+    border-radius: 50%;
+    left: calc(var(--search) * 2);
+    background-color: 	#000;
+}
+
+.circle_3{
+    position: absolute;
+    top: calc(var(--search) * 1);
+    width: calc(var(--search) * 0.7);
+    height: calc(var(--search) * 0.7);
+    border: solid #FF5F1F 1px;
+    border-radius: 50%;
+    left: calc(var(--search) * 3);
+    background-color: 	#FF5F1F;
+}
+
+#line{
+    position: absolute;
+    top:calc(var(--search) * 1.5);
+    left: calc(var(--search) * 1);
+    border: solid 	#C0C0C0 1px;
+    width: calc(var(--search) * 10);
+}
+
+#search_input{
+    position: absolute;
+    top:calc(var(--search) *3.5);
+    left: calc(var(--search) * 1);
+    width: calc(var(--search) * 8);
+    font-size: calc(var(--search) * 0.7);
+}
+
+#search_btn{
+    position: absolute;
+    top:calc(var(--search) * 3.5);
+    left: calc(var(--search) * 9);
+    border: solid #C0C0C0 1px;
+    width: calc(var(--search) * 2);
+    text-align: center;
+    font-size: calc(var(--search) * 0.7);
+}
+
+.patterns_div{
+    position: absolute;
+    top:calc(var(--search) * 1);
+    left: calc(var(--search) * 14);
+    border: solid 	#28282B 1px;
+    width: calc(var(--search) * 52.5);
+    height: calc(var(--search) * 8);
+    background-color: 	#353935;
+}
+
+.pattern_main_text{
+    position: absolute;
+    top:calc(var(--search) * 2);
+    left: calc(var(--search) * 20);
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 2.5);
+}
+
+.pattern_main_text_kaz{
+    left: calc(var(--search) * 14);
+
+}
+
+.vacancy_div{
+    position: absolute;
+    top:calc(var(--search) * 9.5);
+    left: calc(var(--search) * 14);
+    border: solid 	#fff 1px;
+    width: calc(var(--search) * 52.5);
+    height: 68%;
+    overflow-y: scroll;
+}
+
+.set{
+    position: absolute;
+}
+.img_src{
+    width: calc(var(--search) * 5);
+    height: calc(var(--search) * 5);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name{
+    position: absolute;
+    top:calc(var(--search) * 1);
+    left: calc(var(--search) * 7);
+    font-size: calc(var(--search) * 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.surname{
+    position: absolute;
+    font-size: calc(var(--search) * 0.8);
+    left: calc(var(--search) * 7);
+
+    font-family: Arial, Helvetica, sans-serif;
+    top:calc(var(--search) * 2.3)
+}
+
+.rating{
+    position: absolute;
+    font-size: calc(var(--search) * 0.8);
+    left: calc(var(--search) * 7);
+
+    font-family: Arial, Helvetica, sans-serif;
+    top:calc(var(--search) * 3.6)
+}
+
+.assistent{
+    position: absolute;
+    top:calc(var(--search) * 10);
+    left: calc(var(--search) * 45);
+    width: calc(var(--search) * 18);
+    height: calc(var(--search) * 15);
+    border: solid #000 1px;
+   background-color: #fff;
+   border-radius: 5px;
+   overflow-y: scroll;
+   display: none;
+}
+
+.text{
+    position: absolute;
+    top: calc(var(--search) * 4);
+    left: calc(var(--search) * 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 0.8);
+}
+
+#talk_btn{
+    position: absolute;
+    top:calc(var(--search) * 2);
+    left: calc(var(--search) * 5);
+}
+
+.assistant_icon{
+    position: absolute;
+    top:92%;
+    width: calc(var(--search) * 1.5);
+    left: calc(var(--search) * 1.5);
+    cursor: pointer;
+}
+
+.close_btn_assistant{
+    position: absolute;
+    left: calc(var(--search) * 16.5);
+    font-size: calc(var(--search) * 1);
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.wrapper_text_assistant{
+    /* position: absolute;
+    top:calc(var(--search) * 2);
+    left: calc(var(--search) * 2);
+    width: calc(var(--search) * 7);
+    height: calc(var(--search) * 10);
+    border: solid #000 1px;
+    background-color: #fff; */
+}
+
+
+.assistent::-webkit-scrollbar{
+    width: 10px;
+    background-color: #f9f9fd;
+}
+
+.assistent::-webkit-scrollbar {
+    /* width: 10px; */
+    background-color: #f9f9fd;
+  }
+  
+.assistent::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: 	#353935;
+  }
+  
+.assistent::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+  }
+
+#content{
+    padding-top: calc(var(--search) * 1);
+    padding-left: calc(var(--search) * 2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.music_div{
+    position: absolute;
+    top:calc(var(--search) * 8);
+    left: calc(var(--search) * 18);
+    width: calc(var(--search) * 30);
+    height: calc(var(--search) * 15);
+    border: solid #fff 1px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 1px 2px 2px 2px #e5e5e5;
+    
+    animation: 1s linear alternate music_div;
+    display: none;
+}
+
+.close_btn_music{
+    position: absolute;
+    top:calc(var(--search) * 0.1);
+    left: calc(var(--search) * 29);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 1);
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+.close_btn_music:hover{
+    color: #666666;
+
+}
+
+@keyframes music_div {
+    0%{
+        top:calc(var(--search) * 8);
+        opacity: 0;
+    }
+    100%{
+        top:calc(var(--search) * 8);
+        opacity: 1;
+    }
+}
+
+.description_text{
+    position: absolute;
+    top:calc(var(--search) * 3.7);
+    left: calc(var(--search) * 2.2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 0.7);
+}
+
+#input_link{
+    position: absolute;
+    top:calc(var(--search) * 5);
+    left: calc(var(--search) * 2);
+    width: calc(var(--search)* 25);
+}
+
+#music_btn{
+    position: absolute;
+    top:calc(var(--search) * 8.5);
+    left: calc(var(--search) * 2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 0.7);
+}
+
+.music_fail{
+    position: absolute;
+    top:calc(var(--search) * 7.2);
+    left: calc(var(--search) * 2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 0.65);
+    color: red;
+}
+
+#alert_for_music{
+    position: absolute;
+    top:calc(var(--search) * 1);
+    left: calc(var(--search) * 51.5);
+    width: calc(var(--search) * 15);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 0.7);
+    animation: 0.5s linear alternate alert_music;
+    display: none;
+}
+
+@keyframes alert_music {
+    0%{
+        top:calc(var(--search) * 0);
+
+        display: none;
+    }
+
+    50%{
+        display: none;
+
+    }
+    100%{
+        top:calc(var(--search) * 1);
+
+    display: flex;
+    }
+}
+
+.battery{
+    position: absolute;
+}
+
+.button_view{
+    position: absolute;
+    top:calc(var(--search) * 2);
+    left: calc(var(--search) * 43.3);
+    border: solid #000 1px;
+    width: calc(var(--search) * 7);
+    height: calc(var(--search) * 1.8);
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 0.7);
+    transition: 0.5s ease;
+}
+
+.button_view:hover{
+    background-color: #000;
+    color: #fff
+}
+
+.characteristics_div{
+    position: absolute;
+    top:calc(var(--search) * 8);
+    left: calc(var(--search) * 18);
+    width: calc(var(--search) * 30);
+    height: calc(var(--search) * 15);
+    border: solid #fff 1px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 1px 2px 2px 2px #e5e5e5;
+    
+    animation: 0.3s linear alternate charac;
+    display: none;
+}
+
+@keyframes charac {
+    0%{
+        top:calc(var(--search) * 8);
+        opacity: 0;
+    }
+    100%{
+        top:calc(var(--search) * 8);
+        opacity: 1;
+    }
+}
+
+.close_btn_characteristics{
+    position: absolute;
+    top:calc(var(--search) * 0.1);
+    left: calc(var(--search) * 29);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 0.8);
+    cursor: pointer;
+    transition: 0.5s ease;
+    background-color: #fff;
+}
+
+.close_btn_characteristics:hover{
+    color: #666666;
+
+}
+
+.web_design_text{
+    position: absolute;
+    top:calc(var(--search) * 3);
+    left: calc(var(--search) * 2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 0.8);
+}
+
+.markup_text{
+    position: absolute;
+    top:calc(var(--search) * 4.5);
+    left: calc(var(--search) * 2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 0.8);
+}
+
+.onePage_text{
+    position: absolute;
+    top:calc(var(--search) * 6);
+    left: calc(var(--search) * 2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 0.8);
+}
+
+.mobile_text{
+    position: absolute;
+    top:calc(var(--search) * 7.5);
+    left: calc(var(--search) * 2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 0.8);
+}
+
+.backend_text{
+    position: absolute;
+    top:calc(var(--search) * 9);
+    left: calc(var(--search) * 2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 0.8);
+}
+
+.feedback{
+    position: absolute;
+    top:calc(var(--search) * 11.5);
+    left: calc(var(--search) * 2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 0.8);
+}
+
+#call_btn{
+    position: absolute;
+    top:calc(var(--search) * 13);
+    left: calc(var(--search) * 2);
+}
+
+.btn_call{
+    position: absolute;
+    top:calc(var(--search) * 2);
+    left: calc(var(--search) * 36.3);
+    border: solid #000 1px;
+    width: calc(var(--search) * 7);
+    height: calc(var(--search) * 1.8);
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--search) * 0.7);
+    transition: 0.5s ease;
+}
+
+.occupation_info{
+    position: absolute;
+    top:calc(var(--search) * 5)
+}

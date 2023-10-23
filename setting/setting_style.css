@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+/* variable */
+:root{
+    --index: calc(1vh + 1vw)
+}
+
+.lang{
+    position: absolute;
+    top: calc(var(--index) * 7.5);
+    left: calc(var(--index) * 20);
+    width: calc(var(--index) * 1.4);
+}
+
+.language_input{
+    position: absolute;
+    top: calc(var(--index) * 7.5);
+    left: calc(var(--index) * 22);
+    width: calc(var(--index) * 15);
+    border: solid #000 1px;
+    outline: none;
+    height: calc(var(--index) * 1.2);
+    border-radius: 8px;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    padding-left: 7px;
+    font-size: calc(var(--index) * 0.75);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#lan_btn{
+    position: absolute;
+    top: calc(var(--index) * 10.2);
+    left: calc(var(--index) * 32.5);
+}
+
+.myImg{
+    position: absolute;
+    top: calc(var(--index) * 15);
+    left: calc(var(--index) * 22);
+    width: calc(var(--index) * 15);
+    border: solid #000 1px;
+    outline: none;
+    height: calc(var(--index) * 1.2);
+    border-radius: 8px;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    padding-left: 7px;
+    font-size: calc(var(--index) * 0.75);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#apply{
+    position: absolute;
+    top: calc(var(--index) * 18);
+    left: calc(var(--index) * 31);
+}
+
+
+.avatar_icon{
+    position: absolute;
+    top: calc(var(--index) * 14.9);
+    left: calc(var(--index) * 20);
+    width: calc(var(--index) * 1.4);
+}

@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+/* var */
+:root{
+    --instruction: calc(1vh + 1vw)
+}
+
+#content{
+    padding-top: calc(var(--instruction) * 15);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: none;
+}
+
+.content_introduction{
+    padding-left: calc(var(--instruction) * 1.5);
+    font-size: calc(var(--instruction) * 1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.company_name{
+    padding-left: calc(var(--instruction) * 9);
+    font-size: calc(var(--instruction) * 1);
+    font-size: calc(var(--instruction) * 0.8);
+
+}
+
+.img_main{
+    padding-left: calc(var(--instruction) * 7.8);
+    width: calc(var(--instruction) * 25);
+    object-fit: cover;
+}
+
+.chapter{
+    padding-left: calc(var(--instruction) * 5);
+
+    font-size: calc(var(--instruction) * 1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chapter_number{
+    padding-left: calc(var(--instruction) * 7);
+    font-size: calc(var(--instruction) * 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chapter_1{
+    padding-left: calc(var(--instruction) * 4);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: calc(var(--instruction) * 0.8);
+}
+
+.chapter_1_text{
+    padding: 5% ;
+    letter-spacing: 2px;
+    font-size: calc(var(--instruction) * 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.chapter_2{
+    padding-left: calc(var(--instruction) * 4);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: calc(var(--instruction) * 0.8);
+}
+
+.chapter_2_text{
+    padding: 5% ;
+    letter-spacing: 2px;
+    font-size: calc(var(--instruction) * 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
