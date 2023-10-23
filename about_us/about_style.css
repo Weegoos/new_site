@@ -1,0 +1,423 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: #fff;
+}
+
+/* var */
+:root{
+    --index: calc(1vh + 1vw)
+}
+
+.main_info{
+    position: absolute;
+    top:calc(var(--index) * 0);
+    left: calc(var(--index) * 0);
+    width:205.5vh;
+    height: calc(var(--index) * 5);
+    background: 	#1B1212;
+}
+
+.main_info button{
+    background: #1B1212;
+    font-size: calc(var(--index) * 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: calc(var(--index) * 1.5);
+    cursor: pointer;
+}
+
+.about_btn{
+    left: calc(var(--index) * 53);
+    color: #fff;
+}
+
+.news_btn{
+    left: calc(var(--index) * 50);
+    color: #555;
+}
+
+.contact_btn{
+    left: calc(var(--index) * 56);
+    color: #555;
+}
+
+.company_name{
+    position: absolute;
+    top:calc(var(--index) * 1);
+    font-family: Lucida HandWriting;
+    left: calc(var(--index) * 2);
+    color: red;
+    font-weight: bold;
+    font-size: calc(var(--index) * 2);
+}
+
+.main_content{
+    position: absolute;
+    top:calc(var(--index) * 4);
+    left: calc(var(--index) * 0);
+    width:205.5vh;
+    height: 300vh;
+    background: 	#1B1212;
+}
+
+.aboutNewNews{
+    position: absolute;
+    top:calc(var(--index) * 5);
+    left: calc(var(--index) * 2);
+    font-size: calc(var(--index) * 2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.about_company{
+    position: absolute;
+    top: calc(var(--index) * 3);
+    left:calc(var(--index) * 40);
+    width: calc(var(--index) * 25);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--index) * 0.8);
+}
+
+.animation{
+    animation: about linear alternate 1s forwards;
+}
+
+@keyframes about {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.images{
+    position: absolute;
+    top:calc(var(--index) * 24);
+    left: calc(var(--index) * 2);
+}
+
+.images img{
+    position: absolute;
+    width: calc(var(--index) * 18);
+    height: calc(var(--index) * 20);
+    object-fit: cover;
+}
+
+.images .accordion{
+    position: absolute;
+    width: calc(var(--index) * 25);
+    left: calc(var(--index) * 22);
+    height: calc(var(--index) * 2);
+}
+
+#accordion_id{
+    top:calc(var(--index) * 4.8);
+}
+
+.images .name{
+    position: absolute;
+    left:calc(var(--index) * 22);
+    width: calc(var(--index) * 20);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--index) * 1);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+#current_first_name{
+    top:calc(var(--index) * 0)
+}
+
+.images .city{
+    position: absolute;
+    left: calc(var(--index) * 22);
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--index) * 0.8);
+    width: calc(var(--index) * 22);
+}
+
+#current_cite_first{
+    top:calc(var(--index) * 2)
+
+}
+
+.second_img{
+    top:calc(var(--index) * 22)
+}
+
+#current_second_name{
+    top:calc(var(--index) * 22)
+}
+
+#current_city_second{
+    top:calc(var(--index) * 24)
+}
+
+#accordion_second{
+    top:calc(var(--index) * 26.8)
+}
+
+.third_img{
+    top:calc(var(--index) * 44)
+}
+
+#current_third_name{
+    top:calc(var(--index) * 44)
+}
+
+#current_city_third{
+    top:calc(var(--index) * 46)
+}
+
+#accordion_third{
+    top:calc(var(--index) * 48.8)
+}
+
+.wrapper_discount::-webkit-scrollbar{
+    width: 10px;
+    background-color: #f9f9fd;
+}
+
+body::-webkit-scrollbar {
+    /* width: 10px; */
+    background-color: #f9f9fd;
+  }
+  
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: 	#fff;
+  }
+  
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    /* border-radius: 10px; */
+    background-color: 	#36454F;
+  }
+
+.text_news{
+    position: absolute;
+    top: calc(var(--index) * 3);
+    left: calc(var(--index) * 2);
+    font-size: calc(var(--index) * 2.2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.news_hr{
+    position: absolute;
+    top:calc(var(--index) * 6);
+    left: calc(var(--index) * 2);
+    border: solid #fff 1px;
+    width: calc(var(--index) * 62);
+}
+
+.news_img_first{
+    position: absolute;
+    top:calc(var(--index) * 8);
+    left: calc(var(--index) * 2);
+}
+
+.name_news{
+    position: absolute;
+    top:calc(var(--index) * 29.5);
+    left: calc(var(--index) * 2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--index) * 1);
+    width: calc(var(--index) * 20);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.prev_first{
+    position: absolute;
+    top:calc(var(--index) * 32.5);
+    left: calc(var(--index) * 2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--index) * 0.8);
+    color: #555;
+}
+
+.news_img_second{
+    position: absolute;
+    top:calc(var(--index) * 8);
+    left: calc(var(--index) * 25);
+}
+
+.news_second{
+    position: absolute;
+    top:calc(var(--index) * 26.5);
+    left: calc(var(--index) * 25);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--index) * 1);
+    width: calc(var(--index) * 27);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.prev_second{
+    position: absolute;
+    top:calc(var(--index) * 28);
+    left: calc(var(--index) * 25);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--index) * 0.8);
+    color: #555;
+}
+
+.contact_text{
+    position: absolute;
+    top: calc(var(--index) * 3);
+    left: calc(var(--index) * 2);
+    font-size: calc(var(--index) * 2.2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.contact_line{
+    position: absolute;
+    top:calc(var(--index) * 6);
+    left: calc(var(--index) * 2);
+    border: solid #fff 1px;
+    width: calc(var(--index) * 62);
+}
+
+.contact_content img{
+    position: absolute;
+ 
+    width: calc(var(--index) * 30);
+    height: calc(var(--index) * 23);
+    object-fit: cover;
+}
+
+.newYork_img{
+    top:calc(var(--index) * 9);
+    left: calc(var(--index) * 2);
+}
+
+.contact_content .city_name_contact{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--index) * 1);
+    font-weight: bold;
+}
+
+#ny{
+    top:calc(var(--index) * 32.5);
+    left: calc(var(--index) * 2);
+}
+
+.contact_content .time{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--index) * 0.8);
+
+}
+
+#newYork_time{
+    top:calc(var(--index) * 34);
+    left: calc(var(--index) * 2);
+}
+
+.contact_content .email{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--index) * 0.8);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#newYorkEmail{
+    top:calc(var(--index) * 36);
+    left: calc(var(--index) * 2);
+}
+
+.contact_content .phoneNumber{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--index) * 0.8);
+    cursor: pointer;
+
+}
+
+#numNewYork{
+    top:calc(var(--index) * 37.3);
+    left: calc(var(--index) * 2);
+}
+
+.contact_content .address {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(var(--index) * 0.8);
+    cursor: pointer;
+}
+
+#addressNewYork{
+    top:calc(var(--index) * 39.3);
+    left: calc(var(--index) * 2);
+}
+
+.london_img{
+    top:calc(var(--index) * 9);
+    left: calc(var(--index) * 34);
+}
+
+#cityLondon{
+    top:calc(var(--index) * 32.5);
+    left: calc(var(--index) * 34);
+}
+
+#london_time{
+    top:calc(var(--index) * 34);
+    left: calc(var(--index) * 34);
+}
+
+#londonEmail{
+    top:calc(var(--index) * 36);
+    left: calc(var(--index) * 34);
+}
+
+#numLondon{
+    top:calc(var(--index) * 37.3);
+    left: calc(var(--index) * 34);
+}
+
+#addressLondon{
+    top:calc(var(--index) * 39.3);
+    left: calc(var(--index) * 34);
+}
+
+.astanaImg{
+    top:calc(var(--index) * 49);
+    left: calc(var(--index) * 2);
+}
+
+#cityAstana{
+    top: calc(var(--index) * 72.5);
+    left: calc(var(--index) * 2);
+}
+
+#astana_time{
+    top: calc(var(--index) * 74);
+    left: calc(var(--index) * 2);
+}
+
+#astanaEmail{
+    top: calc(var(--index) * 76);
+    left: calc(var(--index) * 2);
+}
+
+#numAstana{
+    top: calc(var(--index) * 77.3);
+    left: calc(var(--index) * 2);
+}
+
+#addressAstana{
+    top: calc(var(--index) * 79.3);
+    left: calc(var(--index) * 2);
+}

@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin:0;
+    border: 0;
+}
+
+/* var */
+:root{
+    --var: calc(1vh + 1vw);
+}
+
+#textarea{
+    position: absolute;
+    top:calc(var(--var) * 4);
+    left: calc(var(--var) * 5);
+    border: solid #fff 1px;
+    resize: none;
+    border-radius: 8px;
+    overflow-y: scroll;
+    box-shadow: 1px 0px 1px 1px;
+    outline: none;
+    padding-left: 5px;
+    font-size: calc(var(--var) * 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#send_comments{
+    position: absolute;
+    top: calc(var(--var) * 11);
+    left: calc(var(--var) * 5);
+    border-radius: 8px;
+}
+
+#msg-list{
+    position: absolute;
+    top:calc(var(--var) * 15);
+    width: calc(var(--var) * 25);
+}
+
+.lines{
+    width: 100%;
+    border: solid red 1px
+}
